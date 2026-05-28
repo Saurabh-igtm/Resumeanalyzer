@@ -1,4 +1,4 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+.import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 /**
  * Gemini structured-output schema. Gemini will return JSON that conforms
