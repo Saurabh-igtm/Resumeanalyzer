@@ -1,4 +1,4 @@
-.import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 /**
  * Gemini structured-output schema. Gemini will return JSON that conforms
@@ -51,7 +51,7 @@ const RESPONSE_SCHEMA = {
       description: 'Standard sections (e.g. Skills, Projects, Education) that appear to be missing.',
     },
   },
-  required: ['overallScore', 'categoryScores', 'summary', 'strengths', 'weaknesses', 'rewrites'],
+  required: ['overallScore', 'categoryScores', 'summary', 'strengths', 'weaknesses', 'rewrites', 'missingSections'],
 };
 
 const SYSTEM_INSTRUCTIONS = `You are a senior technical recruiter and resume coach. You review resumes critically but constructively, prioritising:
